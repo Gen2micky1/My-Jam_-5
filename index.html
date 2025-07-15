@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8" />
-    <meta name="author" content="Olowofela Micheal"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Olowofela Micheal" />
     <meta
       name="description"
       content="This is a Base Apparel Coming Soon Page."
@@ -15,9 +15,9 @@
       type="image/x-icon"
     />
     <title>Base Apparel</title>
-</head>
-<body>
-  <section class="section-wrapper">
+  </head>
+  <body>
+    <section class="section-wrapper">
       <header class="header">
         <figure class="header__logo">
           <img src="./images/logo.svg" alt="logo" width="158" height="33" />
@@ -55,14 +55,27 @@
           novalidate
         >
           <div class="rsvpForm__wrapper">
-            <input
+            <div class="input-wrapper">
+              <input
               type="email"
               name="email"
               id="email"
               class="rsvpForm__email-input"
               required
               placeholder="Email Address"
-            />
+             />
+
+             <figure class="rsvpForm__status-icon">
+              <img
+                src="./images/icon-success.svg"
+                alt="icon-success"
+                width="24"
+                height="24"
+              />
+
+              <figcaption class="offscreen">icon-error</figcaption>`;
+            </figure>
+            </div>
 
             <button type="submit" class="rsvpForm__button">
               <figure class="rsvpForm__button-icon">
@@ -76,17 +89,6 @@
                 <figcaption class="offscreen">icon-arrow</figcaption>
               </figure>
             </button>
-
-            <figure class="rsvpForm__status-icon">
-              <img
-                src="./images/icon-error.svg"
-                alt="icon-error"
-                width="24"
-                height="24"
-              />
-
-              <figcaption class="offscreen">icon-error</figcaption>
-            </figure>
           </div>
           <p class="status-message"></p>
         </form>
@@ -103,6 +105,6 @@
 
       <figcaption class="offscreen">hero-desktop</figcaption>
     </figure>
-  <script type="module" src="main.js"></script>
-</body>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

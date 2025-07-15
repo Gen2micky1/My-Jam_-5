@@ -24,6 +24,7 @@ if (form && input && button && statusMessage && statusIcon) {
     />
 
     <figcaption class="offscreen">icon-error</figcaption>`;
+    statusIcon.style.display = 'block';
   }
 
   function setSuccess(message) {
@@ -42,7 +43,8 @@ if (form && input && button && statusMessage && statusIcon) {
       height="24"
     />
 
-    <figcaption class="offscreen">icon-error</figcaption>`;
+    <figcaption class="offscreen">icon-success</figcaption>`;
+    statusIcon.style.display = 'block';
   }
 
   function restFormUI() {

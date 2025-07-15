@@ -147,8 +147,14 @@ h1 {
   max-width: 311px;
 }
 
+.input-wrapper {
+  position: relative;
+  width: 311px;
+}
+
 input[type="email"] {
   width: 100%;
+  display: block;
   font: var(--INPUT-MOB);
   color: var(--INPUT-CLR);
   /* padding: 0.6875rem calc(offset icon + icon width + buffer (8-12px) 0.5625 1.5rem); */
@@ -260,8 +266,12 @@ input[type="email"]:focus {
     max-width: 445px;
   }
 
+  .input-wrapper {
+    width: 445px;
+  }
+
   input[type="email"] {
-    padding: .9375rem calc(116px + 24px + 12px) .8125rem 2rem;
+    padding: 0.9375rem calc(116px + 24px + 12px) 0.8125rem 2rem;
     font: var(--INPUT-DSK);
   }
 
